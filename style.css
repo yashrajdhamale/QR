@@ -29,7 +29,7 @@ body {
 
 #text {
   width: 300px;
-  
+
   padding: 5px;
   margin: 10px 0;
   border: 1px solid #ccc;
@@ -39,7 +39,6 @@ body {
 #qr-code {
   width: 100%;
   padding: 0px;
-  /* margin: 10px 0; */
 
   border-radius: 5px;
 }
@@ -48,6 +47,24 @@ body {
   width: 100%;
   padding: 15px;
   margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.qr-code{
+  display: flex;
+  
+
+}
+#buttonCopy{
+  width: 50px;
+  height: 20px;
+ text-align: center;
+  margin-top: 120px;
+  margin-left: 100px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #007bff;
