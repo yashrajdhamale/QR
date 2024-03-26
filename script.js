@@ -7,6 +7,16 @@ function generate() {
   text.value = "";
 }
 
-function copy(){
+async function  copy(){
+    const img = document.getElementById('QR-Code');
+    const blob = await fetch(img.src).then((response) => response.blob());
 
+    try {
+        await navigator.clipboard.write([
+            new ClipboardItem({ 'image/png': blob })
+        ]);
+        alert('Image copied to clipboard!');
+    } catch (error) {
+        console.error('Error copying image:', error);
+    }
 }
