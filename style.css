@@ -71,3 +71,8 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
+#h6{
+  margin: 0px;
+  display: none;
+}
